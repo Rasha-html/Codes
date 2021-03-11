@@ -1,55 +1,10 @@
+//////CODE NON FINI////
+
+
 
 const Discord = require(`discord.js`);
 const timerLib = require(`easytimer.js`).Timer;
 exports.run = async (client, message, args) => {
-  //RASHA CODE - DON'T TOUCH UNTIL FURTHER NOTICE
-  /*
-  var ms = require('ms')
-  { //bot = client, msg = message, params = args
-
-    let time = args[0];
-
-    if (!args[0]) {
-      return message.channel.send(":x: " + "| Please Enter a time period followed by \"s or m or h\"");
-    }
-
-
-    if (args[0] >= 0) {
-      return message.channel.send(":x: " + "| Please Enter a time period followed by \"s or m or h\"");
-    }
-
-
-    message.channel.send(`${ms(ms(time), { long: true })} left`)
-    //IL FAUT METTRE DES NOMS DE VARIABLES QUI SONT PARLANT, I ET A TU SAURAS PAS C QUOI DANS 3 SEMAINES !!!!!!!!
-    // OKKKKKKKK CHILLLLL JIFUHAYQSJHBCI UFJYZEGQS VCDGJZS CHANGE LES ALORS MDR
-    //JESSAYE DE LIRE LE CODE JUSTEMENT U_U ( j'ai 37 ans j'utilsie des smileys)U<odkz javoue ptddrr
-    // boloss
-    //MON TERMINAL EST CASSE SA MERE
-
-    // la partie en dessous ne sert à rien 
-    var i = 0;
-    var a = setInterval(function () {
-
-      if (i === 3) {
-        clearInterval(a);
-      }
-      else {
-        message.channel.edit(message.author.toString() + ' ' + (30 * (i + 1)) + ' left')
-        i++;
-      }
-    }
-      , 30 * 1000);
-    // jusqu'à ici : inutil
-
-    setTimeout(function () {
-      message.channel.send(message.author.toString() + ` The Timer Has FINISHED!, it lasted: ${ms(ms(time), { long: true })}`)
-
-    }, ms(time));
-  };*/
-
-  /**************************************************
-   * HUGO CODE - MIGHT BE SHIT NOW BUT WAIT AND SEE *
-   **************************************************/
 
   //RETRIEVE USER WHO STARTED THE COUNTDOWN
   let user = message.author.tag;
